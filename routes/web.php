@@ -26,9 +26,9 @@ Route::get('feeds', function(\Illuminate\Http\Request $request){
 
     $api = new Api($cachePool);
     $api->login('invisiblenightwalker', 'ugbanawaji1234A'); // mandatory
-    $profile = $api->getProfile('robertdowneyjr');
+    $profile = $api->getProfile('luchydonalds');
 
-    echo $profile->getUserName(); // robertdowneyjr
+    //echo $profile->getUserName(); // robertdowneyjr
 
-    //echo $profile->getFullName(); // Robert Downey Jr. Official
+    return $profile->getFullName(); // Robert Downey Jr. Official
 });
