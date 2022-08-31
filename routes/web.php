@@ -31,5 +31,10 @@ Route::get('feeds', function(\Illuminate\Http\Request $request){
     //echo $profile->getUserName(); // robertdowneyjr
 
     //return $profile->getFullName(); // Robert Downey Jr. Official
-    return $profile->getMedias();
+
+    sleep(1);
+    $feedStories = $api->getStories($profile->getId());
+
+    return $stories = $feedStories->getStories();
+
 });
