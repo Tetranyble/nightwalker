@@ -35,6 +35,8 @@ Route::get('feeds', function(\Illuminate\Http\Request $request){
     sleep(1);
     $feedStories = $api->getStories($profile->getId());
 
-    return $stories = $feedStories->getStories();
+    $stories = $feedStories->getStories();
+
+    dd($stories);
 
 });
