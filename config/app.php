@@ -164,9 +164,11 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+
         /*
          * Package Service Providers...
          */
+        Dawson\Youtube\YoutubeServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -191,7 +193,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // ...
+        'Youtube' => Dawson\Youtube\Facades\Youtube::class,
     ])->toArray(),
 
 ];

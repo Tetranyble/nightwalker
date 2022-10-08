@@ -7,13 +7,16 @@
 
     "require": {
         "php": "^8.0.2",
+        "dawson/youtube": "^2.0",
         "guzzlehttp/guzzle": "^7.2",
         "joltmode/nfigurator": "^0.2.5",
         "laravel/framework": "^9.2",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^3.4",
-        "pgrimaud/instagram-user-feed": "^6.16"
+        "pgrimaud/instagram-user-feed": "^6.16",
+        "phpfastcache/phpfastcache": "*",
+        "raiym/instagram-php-scraper": "^0.12.7"
     },
 
     "require-dev": {
